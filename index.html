@@ -1,303 +1,639 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="description" content="Política de Privacidade e Termos de Uso do Fatec Socorro Bot e suas integrações institucionais.">
   <title>Política de Privacidade e Termos de Uso | Fatec Socorro Bot</title>
 
   <style>
+    :root {
+      --vermelho: #B20000;
+      --azul: #005C6D;
+      --azul-escuro: #002F38;
+      --cinza: #333333;
+      --cinza-claro: #F2F2F2;
+      --branco: #FFFFFF;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #222;
-      background: #fff;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      color: var(--cinza);
+      background: var(--branco);
     }
 
-    h1, h2 {
-      color: #8b0000;
+    header {
+      background: var(--azul-escuro);
+      color: var(--branco);
+      padding: 30px 20px;
+      text-align: center;
+      border-top: 7px solid var(--vermelho);
     }
 
-    h1 {
-      border-bottom: 3px solid #8b0000;
-      padding-bottom: 12px;
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: var(--branco);
     }
 
-    .atualizacao {
-      color: #666;
-      margin-bottom: 30px;
+    header p { margin-bottom: 0; }
+
+    main {
+      max-width: 950px;
+      margin: auto;
+      padding: 28px 22px 60px;
+    }
+
+    nav {
+      background: var(--cinza-claro);
+      border-radius: 8px;
+      padding: 18px 24px;
+      margin: 25px 0 35px;
+    }
+
+    nav a, main a {
+      color: var(--azul);
+      text-underline-offset: 3px;
+    }
+
+    nav a:hover, main a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--vermelho);
+      outline-offset: 3px;
+    }
+
+    h2 {
+      color: var(--vermelho);
+      margin-top: 42px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    h3 {
+      color: var(--azul);
+      margin-top: 25px;
+    }
+
+    li { margin-bottom: 8px; }
+
+    section { scroll-margin-top: 20px; }
+
+    .aviso {
+      padding: 15px 20px;
+      border-left: 4px solid var(--azul);
+      background: var(--cinza-claro);
+      margin: 25px 0;
     }
 
     footer {
-      margin-top: 50px;
-      padding-top: 20px;
-      border-top: 1px solid #ccc;
-      color: #555;
+      padding: 25px 20px;
+      text-align: center;
+      background: var(--azul-escuro);
+      color: var(--branco);
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 1.4rem; }
+      main { padding: 18px 16px 40px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <h1>Política de Privacidade e Termos de Uso</h1>
+    <p>Fatec Socorro Bot — Centro Paula Souza</p>
+  </header>
 
-<h1>Política de Privacidade — Fatec Socorro Bot</h1>
+  <main id="conteudo">
+    <p><strong>Revisão proposta:</strong> 23 de outubro de 2026</p>
 
-<p class="atualizacao">
-  <strong>Última atualização:</strong> 31 de agosto de 2026
-</p>
+    <p>
+      A Faculdade de Tecnologia de Socorro (Fatec Socorro),
+      unidade vinculada ao Centro Estadual de Educação
+      Tecnológica Paula Souza (CEETEPS), respeita a
+      privacidade dos usuários e busca realizar o tratamento
+      de dados pessoais de maneira responsável, segura
+      e transparente.
+    </p>
 
-<p>
-A Faculdade de Tecnologia de Socorro – Fatec Socorro, unidade vinculada ao
-Centro Estadual de Educação Tecnológica Paula Souza (CEETEPS), respeita a
-privacidade dos usuários e busca tratar os dados pessoais de forma responsável,
-segura e transparente.
-</p>
+    <p>
+      Esta Política apresenta informações sobre o tratamento
+      de dados relacionado ao Fatec Socorro Bot, aos seus
+      canais digitais de atendimento e às ferramentas
+      institucionais de gerenciamento de conteúdos e
+      mídias sociais.
+    </p>
 
-<p>
-Esta Política de Privacidade explica como as informações podem ser tratadas
-durante a utilização do <strong>Fatec Socorro Bot</strong>, serviço de atendimento
-automatizado disponibilizado inicialmente por meio do WhatsApp e que poderá
-também ser disponibilizado em canais digitais institucionais.
-</p>
+    <nav aria-label="Navegação do documento">
+      <strong>Conteúdo desta página</strong>
+      <ul>
+        <li><a href="#privacidade">Política de Privacidade</a></li>
+        <li><a href="#midias">Integrações com mídias sociais</a></li>
+        <li><a href="#exclusao-de-dados">Exclusão de dados</a></li>
+        <li><a href="#direitos">Direitos dos titulares</a></li>
+        <li><a href="#termos-de-uso">Termos de Uso</a></li>
+        <li><a href="#contato">Responsabilidade institucional</a></li>
+      </ul>
+    </nav>
 
-<h2>1. Finalidade do chatbot</h2>
+    <section id="privacidade">
+      <h2>1. Finalidade do sistema</h2>
+      <p>
+        O Fatec Socorro Bot é uma solução institucional
+        destinada a facilitar o acesso a informações,
+        orientações e serviços relacionados à Fatec Socorro.
+      </p>
 
-<p>
-O Fatec Socorro Bot tem como objetivo facilitar o acesso a informações e
-serviços institucionais, auxiliando usuários em assuntos como cursos,
-processos seletivos, vestibular, editais, horários, localização, contatos
-e outras informações relacionadas à Fatec Socorro.
-</p>
+      <p>Entre suas finalidades estão:</p>
+      <ul>
+        <li>Atendimento sobre cursos e vestibulares.</li>
+        <li>Divulgação de editais e processos seletivos.</li>
+        <li>Informações acadêmicas e institucionais.</li>
+        <li>Orientação sobre localização, contatos e horários.</li>
+        <li>Encaminhamento para atendimento humano.</li>
+        <li>Comunicação institucional em canais digitais.</li>
+        <li>Gerenciamento de conteúdos para redes sociais.</li>
+      </ul>
 
-<p>
-O chatbot não substitui os canais oficiais da instituição quando for
-necessária análise, orientação ou atendimento realizado por uma pessoa.
-</p>
+      <p>
+        O sistema não substitui os documentos oficiais,
+        os procedimentos administrativos nem os canais
+        formais de atendimento da instituição.
+      </p>
+    </section>
 
-<h2>2. Informações que podem ser tratadas</h2>
+    <section>
+      <h2>2. Canais digitais</h2>
+      <p>
+        O sistema pode disponibilizar funcionalidades
+        por meio de canais digitais institucionais,
+        conforme suas configurações e autorizações.
+      </p>
 
-<p>
-Durante a utilização do chatbot, poderão ser tratados dados necessários ao
-funcionamento do atendimento, tais como:
-</p>
+      <p>
+        Esses canais incluem WhatsApp, Telegram,
+        atendimento incorporado ao site e ferramentas
+        administrativas de comunicação.
+      </p>
 
-<ul>
-  <li>número ou identificador associado à conta do WhatsApp;</li>
-  <li>nome ou identificação disponibilizada pelo próprio serviço de mensagens;</li>
-  <li>conteúdo das mensagens enviadas ao chatbot;</li>
-  <li>data e horário das interações;</li>
-  <li>informações técnicas necessárias para funcionamento, segurança e diagnóstico do serviço;</li>
-  <li>outras informações fornecidas voluntariamente pelo próprio usuário durante a conversa.</li>
-</ul>
+      <p>
+        A disponibilidade de cada funcionalidade depende
+        das integrações efetivamente habilitadas.
+      </p>
+    </section>
 
-<p>
-O usuário deve evitar enviar senhas, dados bancários ou outras informações
-pessoais desnecessárias para a realização do atendimento.
-</p>
+    <section>
+      <h2>3. Dados que podem ser tratados</h2>
+      <p>
+        Conforme o serviço utilizado, poderão ser tratados:
+      </p>
 
-<h2>3. Como as informações são utilizadas</h2>
+      <ul>
+        <li>Nome ou identificador disponibilizado pela plataforma.</li>
+        <li>Número de telefone, quando necessário ao atendimento.</li>
+        <li>Conteúdo das mensagens enviadas voluntariamente.</li>
+        <li>Data e horário das interações.</li>
+        <li>Identificadores técnicos de contas e canais conectados.</li>
+        <li>Informações sobre solicitações e atendimentos.</li>
+        <li>Conteúdos institucionais enviados para publicação.</li>
+        <li>Imagens, vídeos, legendas e materiais autorizados.</li>
+        <li>Registros técnicos de acesso, operação e segurança.</li>
+      </ul>
 
-<p>
-As informações recebidas poderão ser utilizadas para permitir o funcionamento
-do chatbot, responder às solicitações dos usuários, encaminhar informações
-institucionais, melhorar a qualidade do atendimento, identificar problemas
-técnicos e garantir a segurança e o funcionamento do serviço.
-</p>
+      <p>
+        Os usuários devem evitar o envio de senhas,
+        dados bancários e informações pessoais que
+        não sejam necessárias ao atendimento solicitado.
+      </p>
+    </section>
 
-<p>
-Os dados não devem ser utilizados para finalidades incompatíveis com o
-atendimento institucional.
-</p>
+    <section>
+      <h2>4. Utilização dos dados</h2>
+      <p>
+        Os dados poderão ser utilizados para responder
+        solicitações, manter o funcionamento do sistema,
+        encaminhar atendimentos, produzir comunicações
+        institucionais autorizadas, registrar operações,
+        identificar falhas e proteger a segurança dos serviços.
+      </p>
 
-<h2>4. Utilização de inteligência artificial</h2>
+      <p>
+        O tratamento deverá observar a finalidade aplicável,
+        a necessidade dos dados e as disposições da Lei
+        Geral de Proteção de Dados Pessoais (LGPD).
+      </p>
+    </section>
 
-<p>
-Determinadas perguntas poderão utilizar recursos de inteligência artificial
-para auxiliar na compreensão da solicitação e na elaboração da resposta.
-</p>
+    <section>
+      <h2>5. Inteligência artificial</h2>
+      <p>
+        Determinadas funcionalidades podem utilizar
+        inteligência artificial para auxiliar na compreensão
+        de mensagens, na elaboração de respostas e,
+        quando habilitado, na revisão de conteúdos.
+      </p>
 
-<p>
-Quando necessário ao funcionamento desse recurso, o conteúdo relevante da
-mensagem poderá ser processado por prestadores de serviços tecnológicos
-utilizados na operação do chatbot.
-</p>
+      <p>
+        Informações necessárias a essas funcionalidades
+        poderão ser processadas por prestadores tecnológicos,
+        conforme a integração efetivamente utilizada.
+      </p>
 
-<p>
-O chatbot será desenvolvido para priorizar informações provenientes de fontes
-institucionais previamente definidas. A inteligência artificial não deve ser
-considerada fonte oficial independente para informações acadêmicas,
-administrativas, prazos, datas, normas ou procedimentos.
-</p>
+      <p>
+        A inteligência artificial não constitui fonte
+        oficial independente de informações acadêmicas,
+        administrativas, legais ou institucionais.
+      </p>
 
-<p>
-Sempre que necessário, o usuário deverá consultar os canais e documentos
-oficiais indicados pela instituição.
-</p>
+      <p>
+        Respostas e sugestões automatizadas poderão
+        exigir conferência humana antes de sua utilização.
+      </p>
+    </section>
 
-<h2>5. WhatsApp e serviços de terceiros</h2>
+    <section id="midias">
+      <h2>6. Integrações com mídias sociais</h2>
+      <p>
+        A Central de Mídias do Fatec Socorro Bot é uma
+        ferramenta administrativa destinada à criação,
+        organização, revisão e aprovação de conteúdos
+        institucionais para publicação em redes sociais.
+      </p>
 
-<p>
-O atendimento pelo WhatsApp depende também dos serviços e da infraestrutura
-disponibilizados pela Meta e pelo WhatsApp.
-</p>
+      <p>
+        O projeto contempla integrações existentes,
+        em desenvolvimento ou previstas com:
+      </p>
 
-<p>
-Consequentemente, determinados dados necessários à transmissão e ao
-processamento das mensagens poderão ser tratados por essas plataformas de
-acordo com seus próprios termos e políticas.
-</p>
+      <ul>
+        <li>Facebook.</li>
+        <li>Instagram.</li>
+        <li>Threads.</li>
+        <li>TikTok.</li>
+        <li>LinkedIn.</li>
+        <li>YouTube.</li>
+        <li>X, anteriormente Twitter.</li>
+      </ul>
 
-<p>
-Outros fornecedores tecnológicos estritamente necessários ao funcionamento
-do chatbot poderão processar informações conforme a finalidade do serviço
-contratado e as regras aplicáveis.
-</p>
+      <div class="aviso">
+        <strong>Importante:</strong>
+        A menção a uma plataforma nesta Política não
+        significa que sua integração esteja ativa,
+        homologada ou autorizada para publicação.
+        Cada integração dependerá das permissões,
+        verificações técnicas e aprovações necessárias.
+      </div>
 
-<h2>6. Compartilhamento de dados</h2>
+      <h3>6.1. Autorização das contas conectadas</h3>
+      <p>
+        Algumas plataformas utilizam mecanismos de
+        autorização, como OAuth, para permitir que
+        contas institucionais sejam vinculadas ao sistema.
+      </p>
 
-<p>
-A Fatec Socorro não utilizará o chatbot com a finalidade de comercializar
-dados pessoais dos usuários.
-</p>
+      <p>
+        Conforme as permissões concedidas, a integração
+        poderá acessar informações necessárias à
+        identificação da conta, à preparação de conteúdos
+        e à publicação institucional autorizada.
+      </p>
 
-<p>
-Informações poderão ser processadas ou compartilhadas quando isso for
-necessário para o funcionamento dos serviços tecnológicos utilizados no
-atendimento, para cumprimento de obrigações legais ou regulatórias, para
-exercício regular de direitos ou em outras hipóteses permitidas pela
-legislação aplicável.
-</p>
+      <p>
+        O acesso será limitado às funcionalidades e
+        permissões disponibilizadas e autorizadas
+        em cada plataforma.
+      </p>
 
-<h2>7. Armazenamento e segurança</h2>
+      <h3>6.2. Identificação das contas</h3>
+      <p>
+        Durante a conexão poderão ser utilizados
+        identificadores de páginas, perfis,
+        organizações e canais, bem como informações
+        técnicas necessárias à autenticação.
+      </p>
 
-<p>
-Serão adotadas medidas técnicas e administrativas compatíveis com o serviço
-para proteger as informações contra acessos não autorizados, perda, alteração,
-divulgação ou tratamento inadequado.
-</p>
+      <p>
+        Esses dados destinam-se à operação e à
+        administração das integrações institucionais.
+      </p>
 
-<p>
-Os dados deverão ser mantidos somente pelo período necessário ao cumprimento
-das finalidades para as quais forem tratados, observadas as obrigações legais,
-regulatórias e institucionais aplicáveis.
-</p>
+      <h3>6.3. Publicações</h3>
+      <p>
+        Conteúdos preparados na Central de Mídias
+        poderão incluir textos, imagens, vídeos,
+        legendas, informações sobre eventos e
+        materiais de divulgação institucional.
+      </p>
 
-<h2>8. Direitos dos titulares</h2>
+      <p>
+        A publicação efetiva dependerá de autorização
+        humana e das condições técnicas e regras
+        de cada plataforma.
+      </p>
 
-<p>
-Os titulares de dados pessoais poderão exercer os direitos previstos na
-legislação aplicável, especialmente na Lei Geral de Proteção de Dados Pessoais
-– LGPD (Lei nº 13.709/2018), observadas as condições e os procedimentos
-estabelecidos pelo Centro Paula Souza.
-</p>
+      <p>
+        Uma vez publicado, o conteúdo também ficará
+        sujeito às políticas, aos mecanismos de
+        armazenamento e aos procedimentos de exclusão
+        da plataforma de destino.
+      </p>
 
-<p>
-Solicitações relacionadas à proteção de dados deverão ser encaminhadas pelos
-canais oficiais disponibilizados pelo Centro Paula Souza.
-</p>
+      <h3>6.4. Credenciais e tokens</h3>
+      <p>
+        As integrações podem utilizar tokens de acesso
+        e outros mecanismos técnicos de autenticação.
+      </p>
 
-<h2 id="exclusao-de-dados">9. Exclusão de dados do usuário</h2>
+      <p>
+        As credenciais administradas pelo sistema são
+        protegidas por mecanismos de segurança,
+        incluindo criptografia e controles de acesso,
+        de acordo com a configuração operacional.
+      </p>
 
-<p>
-O usuário poderá solicitar a exclusão de dados pessoais tratados no âmbito do
-Fatec Socorro Bot, observadas as hipóteses legais e institucionais que possam
-exigir a manutenção de determinadas informações.
-</p>
+      <p>
+        Tokens poderão ser substituídos, revogados ou
+        renovados quando os mecanismos correspondentes
+        estiverem disponíveis e habilitados.
+      </p>
 
-<p>
-Para solicitar a exclusão, o usuário deverá entrar em contato por meio dos
-canais oficiais da Fatec Socorro ou do Centro Estadual de Educação Tecnológica
-Paula Souza, informando que a solicitação se refere aos dados tratados pelo
-<strong>Fatec Socorro Bot</strong>.
-</p>
+      <p>
+        A existência de recursos técnicos de renovação
+        não significa que sua execução automática
+        esteja ativa para todas as plataformas.
+      </p>
+    </section>
 
-<p>
-A solicitação será analisada conforme a legislação aplicável, especialmente a
-Lei Geral de Proteção de Dados Pessoais – LGPD (Lei nº 13.709/2018), e os
-procedimentos institucionais vigentes.
-</p>
+    <section>
+      <h2>7. Compartilhamento com plataformas externas</h2>
+      <p>
+        O funcionamento dos canais digitais e das
+        integrações poderá envolver serviços de terceiros,
+        incluindo plataformas de comunicação, redes sociais,
+        infraestrutura tecnológica e recursos de inteligência
+        artificial, conforme cada funcionalidade habilitada.
+      </p>
 
-<p>
-Quando tecnicamente e legalmente aplicável, os dados abrangidos pela solicitação
-serão excluídos ou anonimizados. Informações cuja conservação seja necessária
-para cumprimento de obrigação legal, regulatória ou institucional poderão ser
-mantidas pelo período exigido.
-</p>
+      <p>
+        As informações necessárias poderão ser transmitidas
+        ou processadas por esses fornecedores de acordo
+        com a finalidade da integração e a legislação aplicável.
+      </p>
 
-<h2>10. Atendimento humano</h2>
+      <p>
+        Os serviços de terceiros possuem suas próprias
+        políticas de privacidade e termos de utilização.
+      </p>
 
-<p>
-Caso o chatbot não consiga responder adequadamente a uma solicitação, o usuário
-poderá ser orientado a procurar um canal oficial ou atendimento humano da
-instituição.
-</p>
+      <p>
+        O Fatec Socorro Bot não tem como finalidade
+        comercializar dados pessoais de seus usuários.
+      </p>
+    </section>
 
-<h2>11. Alterações desta Política</h2>
+    <section>
+      <h2>8. Armazenamento e segurança</h2>
+      <p>
+        O sistema utiliza mecanismos técnicos e
+        administrativos para proteger informações
+        contra acessos não autorizados, alterações
+        indevidas e outras situações de risco.
+      </p>
 
-<p>
-Esta Política de Privacidade poderá ser atualizada para refletir mudanças no
-funcionamento do chatbot, nos serviços tecnológicos utilizados, nos
-procedimentos institucionais ou na legislação aplicável.
-</p>
+      <p>
+        Esses mecanismos podem incluir controle de
+        permissões administrativas, criptografia de
+        credenciais, registros de auditoria e
+        medidas de proteção das operações.
+      </p>
 
-<p>
-A versão vigente será disponibilizada nos canais oficiais indicados pela
-instituição.
-</p>
+      <p>
+        O período de conservação dos dados deverá
+        observar a finalidade do tratamento, as
+        necessidades operacionais e as obrigações
+        legais e institucionais aplicáveis.
+      </p>
 
-<h2>12. Responsável institucional</h2>
+      <p>
+        A exclusão de arquivos utilizados em uma
+        operação não implica necessariamente a exclusão
+        de cópias existentes em plataformas externas
+        ou de registros sujeitos à conservação obrigatória.
+      </p>
+    </section>
 
-<p>
-<strong>Faculdade de Tecnologia de Socorro – Fatec Socorro</strong><br>
-Centro Estadual de Educação Tecnológica Paula Souza – CEETEPS<br>
-Socorro – São Paulo – Brasil
-</p>
+    <section>
+      <h2>9. Revogação de autorizações</h2>
+      <p>
+        A autorização de uma integração poderá ser
+        revogada conforme os recursos disponíveis
+        na plataforma correspondente e os
+        procedimentos institucionais aplicáveis.
+      </p>
 
-<h2 id="termos-de-uso">13. Termos de Uso do Fatec Socorro Bot</h2>
+      <p>
+        A revogação poderá impedir novas operações
+        realizadas pelo sistema, mas não necessariamente
+        removerá conteúdos já publicados ou dados
+        cuja conservação seja legalmente exigida.
+      </p>
+    </section>
 
-<p>
-Ao utilizar o Fatec Socorro Bot, o usuário declara estar ciente de que o serviço
-tem finalidade de atendimento e orientação institucional, oferecendo informações
-relacionadas à Fatec Socorro.
-</p>
+    <section id="direitos">
+      <h2>10. Direitos dos titulares</h2>
+      <p>
+        Os titulares de dados pessoais poderão exercer
+        os direitos previstos na Lei nº 13.709/2018,
+        observadas as hipóteses legais e os procedimentos
+        aplicáveis ao tratamento realizado.
+      </p>
 
-<p>
-O chatbot poderá fornecer respostas automatizadas com base em informações
-institucionais previamente disponibilizadas e, quando aplicável, utilizar recursos
-de inteligência artificial para auxiliar na compreensão das solicitações.
-</p>
+      <p>
+        Entre esses direitos estão a solicitação de
+        confirmação do tratamento, acesso aos dados,
+        correção de informações e exclusão ou
+        anonimização quando legalmente cabíveis.
+      </p>
 
-<p>
-Informações sobre prazos, datas, normas acadêmicas, processos seletivos,
-procedimentos administrativos, editais e demais assuntos oficiais devem ser
-confirmadas nos canais e documentos oficiais da Fatec Socorro e do Centro
-Estadual de Educação Tecnológica Paula Souza.
-</p>
+      <p>
+        As solicitações deverão ser encaminhadas pelos
+        canais oficiais disponibilizados pela Fatec Socorro
+        ou pelo Centro Paula Souza.
+      </p>
+    </section>
 
-<p>
-O usuário compromete-se a utilizar o serviço de forma adequada, não devendo
-empregá-lo para atividades ilícitas, tentativas de fraude, envio de conteúdo
-malicioso ou outras ações que possam comprometer a segurança ou o funcionamento
-do atendimento.
-</p>
+    <section id="exclusao-de-dados">
+      <h2>11. Exclusão de dados do usuário</h2>
+      <p>
+        O usuário poderá solicitar a exclusão de dados
+        pessoais tratados no âmbito do Fatec Socorro Bot,
+        respeitadas as obrigações legais, regulatórias
+        e institucionais aplicáveis.
+      </p>
 
-<p>
-O Fatec Socorro Bot poderá ser alterado, atualizado, suspenso ou descontinuado
-conforme necessidades técnicas, institucionais ou administrativas.
-</p>
+      <p>
+        Para solicitar a exclusão, deverá utilizar
+        os canais oficiais da Fatec Socorro ou do
+        Centro Estadual de Educação Tecnológica
+        Paula Souza, informando que a solicitação
+        se refere ao Fatec Socorro Bot.
+      </p>
 
-<p>
-O uso do chatbot também está sujeito às regras e políticas das plataformas de
-terceiros utilizadas para viabilizar o serviço, incluindo o WhatsApp e a Meta.
-</p>
+      <p>
+        A solicitação será analisada conforme a LGPD
+        e os procedimentos institucionais aplicáveis.
+      </p>
 
-<footer>
-  <p>
-    Fatec Socorro — Centro Estadual de Educação Tecnológica Paula Souza
-  </p>
-</footer>
+      <p>
+        Quando cabível, os dados abrangidos poderão
+        ser excluídos ou anonimizados. Informações
+        sujeitas à conservação obrigatória poderão
+        permanecer armazenadas pelo período exigido.
+      </p>
 
+      <p>
+        Para conteúdos publicados em redes sociais,
+        também poderão ser aplicáveis os mecanismos
+        e procedimentos de exclusão da própria plataforma.
+      </p>
+    </section>
+
+    <section>
+      <h2>12. Atendimento humano</h2>
+      <p>
+        Caso o atendimento automatizado não consiga
+        responder adequadamente a uma solicitação,
+        o usuário poderá ser encaminhado ou orientado
+        a procurar os canais humanos de atendimento
+        disponibilizados pela instituição.
+      </p>
+    </section>
+
+    <section>
+      <h2>13. Alterações desta Política</h2>
+      <p>
+        Esta Política poderá ser revisada para
+        acompanhar mudanças no sistema, nas integrações,
+        nos serviços tecnológicos ou na legislação.
+      </p>
+
+      <p>
+        As alterações aprovadas serão disponibilizadas
+        nesta página, com indicação da revisão correspondente.
+      </p>
+    </section>
+
+    <section id="termos-de-uso">
+      <h2>14. Termos de Uso</h2>
+
+      <h3>14.1. Finalidade institucional</h3>
+      <p>
+        O Fatec Socorro Bot destina-se ao atendimento,
+        à orientação e à comunicação institucional.
+        As informações fornecidas não substituem
+        documentos oficiais ou decisões administrativas.
+      </p>
+
+      <h3>14.2. Uso adequado</h3>
+      <p>
+        O usuário deve utilizar os serviços de forma
+        lícita e responsável, sem realizar tentativas
+        de fraude, envio de conteúdo malicioso,
+        utilização indevida de dados ou ações que
+        comprometam a segurança e a disponibilidade.
+      </p>
+
+      <h3>14.3. Informações oficiais</h3>
+      <p>
+        Datas, prazos, editais, procedimentos acadêmicos
+        e outras informações relevantes deverão ser
+        confirmados nos documentos e canais oficiais
+        da Fatec Socorro e do Centro Paula Souza.
+      </p>
+
+      <h3>14.4. Conteúdos e direitos de terceiros</h3>
+      <p>
+        Os responsáveis pelas publicações institucionais
+        deverão observar as autorizações necessárias
+        para utilização de imagens, vídeos, textos,
+        marcas e demais materiais protegidos.
+      </p>
+
+      <h3>14.5. Regras das plataformas</h3>
+      <p>
+        O funcionamento de integrações com serviços
+        externos depende também das condições técnicas,
+        políticas e termos definidos pelas plataformas.
+      </p>
+
+      <h3>14.6. Disponibilidade</h3>
+      <p>
+        O sistema e suas funcionalidades poderão
+        passar por atualizações, manutenções,
+        interrupções ou alterações conforme
+        necessidades técnicas e institucionais.
+      </p>
+
+      <h3>14.7. Publicação de conteúdos</h3>
+      <p>
+        A Central de Mídias destina-se ao gerenciamento
+        de conteúdos institucionais. Sua utilização
+        administrativa deve observar as autorizações,
+        os controles de acesso e os procedimentos
+        de aprovação aplicáveis.
+      </p>
+    </section>
+
+    <section id="contato">
+      <h2>15. Responsabilidade institucional e contato</h2>
+      <p>
+        <strong>Faculdade de Tecnologia de Socorro
+        — Fatec Socorro</strong>
+      </p>
+
+      <p>
+        Centro Estadual de Educação Tecnológica
+        Paula Souza (CEETEPS)<br>
+        Socorro — São Paulo — Brasil
+      </p>
+
+      <p>
+        Solicitações relacionadas a dados pessoais
+        deverão ser encaminhadas pelos canais
+        oficiais disponibilizados pela instituição
+        e pelo Centro Paula Souza, conforme as
+        atribuições e os procedimentos aplicáveis.
+      </p>
+
+      <p>
+        Esta página não substitui as políticas,
+        normas ou orientações institucionais
+        do Centro Paula Souza.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Fatec Socorro — Centro Estadual de Educação
+      Tecnológica Paula Souza
+    </p>
+    <p>Política de Privacidade e Termos de Uso</p>
+  </footer>
 </body>
 </html>
